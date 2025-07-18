@@ -157,6 +157,69 @@ header nav ul {
     font-weight: 700;
 }
 
+.see-more {
+    margin-top: 50px;
+    text-align: end;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(224, 44, 109, 0.87);
+}
+
+
+/* Featured product styles ............................. */
+.feature-product {
+    max-width: 1150px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 100px;
+}
+
+.feature-product {
+    margin-top: 100px;
+}
+
+.featured-details h2 {
+    color: rgb(10, 8, 38);
+    font-size: 2.375rem;
+    font-weight: 700;
+}
+
+.featured-details p {
+    color: rgb(108, 108, 108);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* Footer styles ....................................... */
+footer {
+    max-width: 100%;
+    height: 200px;
+    margin-top: 150px;
+    background-color: rgb(3, 3, 54);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-details {
+    text-align: center;
+}
+
+.footer-icon {
+    color: white;
+    gap: 30px;
+}
+
+.footer-icon li {
+    list-style: none;
+}
+
 
 
 
@@ -171,7 +234,8 @@ header nav ul {
         flex-direction: column;
     }
 
-    .header-content {
+    .header-content,
+    .feature-product {
         flex-direction: column-reverse;
     }
 
@@ -182,6 +246,7 @@ header nav ul {
     .e-commerce-platform {
         display: grid;
         grid-template-columns: repeat(4, auto);
+        align-items: center;
         padding: 0px 0px;
         row-gap: 15px;
         justify-content: space-around;
@@ -191,4 +256,7 @@ header nav ul {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .featured-details {
+        text-align: center;
+    }
 }
