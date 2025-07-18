@@ -14,12 +14,17 @@
 
 
 
+
 /* Header styles..................................... */
 header {
     max-width: 1150px;
     margin: 0 auto;
     flex-direction: column;
     gap: 50px;
+}
+
+.big-sale {
+    margin-bottom: 100px;
 }
 
 .header-content {
@@ -85,16 +90,84 @@ header nav ul {
     width: 475px;
 }
 
+/* E-commerce section styles ........................... */
+.e-commerce {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.e-commerce-platform {
+    max-height: 100px;
+    max-width: 100%;
+    padding: 35px 50px;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.378%, rgba(192, 204, 218, 0.1) 100%);
+}
+
+.e-commerce-logo {
+    text-align: center;
+}
+
+/* main product content .............................. */
+
+.main-content {
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-content {
+    margin-top: 100px;
+}
+
+.main-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-item {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-details {
+    text-align: left;
+}
+
+.product-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.product-cost {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about-product {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
 
 
 
 
 
-
+/* Media queries..................................... */
 
 
 @media screen and (max-width: 576px) {
-    .nav-item, .right-navbar{
+
+    .nav-item,
+    .right-navbar {
         flex-direction: column;
     }
 
@@ -105,4 +178,17 @@ header nav ul {
     .header-details {
         text-align: center;
     }
+
+    .e-commerce-platform {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        padding: 0px 0px;
+        row-gap: 15px;
+        justify-content: space-around;
+    }
+
+    .main-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
